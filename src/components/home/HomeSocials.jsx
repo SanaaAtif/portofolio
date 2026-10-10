@@ -11,4 +11,4 @@ function HomeSocials() {
   )
 }
 
-export default HomeSocials
+export default HomeSocials;

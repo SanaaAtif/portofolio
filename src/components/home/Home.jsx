@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import Me from "../../assets/me.png";
-import CV from "../../assets/CV.pdf";
+import CV from "../../assets/Sanaa Atif Mohamed.pdf";
 import HomeSocials from "./HomeSocials";
 function Home() {
   return (
