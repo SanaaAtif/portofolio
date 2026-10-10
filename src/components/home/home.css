@@ -1,82 +1,86 @@
-npm run build.home{
-height: 100vh;
-padding: 60px 80px;
-overflow: hidden;
+.home {
+  min-height: 100vh;
+  padding: 7rem 0 3rem;
+  overflow: hidden;
 }
-.home_container{
-    margin-top: 10px;
-    text-align: center;
-    height: 100%;
-    position: relative;
+
+.home_container {
+  text-align: center;
+  position: relative;
 }
-.btns{
-    display: flex;
-    gap: 1rem;
-    margin-top: 2.5rem;
-    justify-content: center;
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  justify-content: center;
 }
-.home_container h4{
-    font-size: 1.5rem;
+
+.home_container h4 {
+  font-size: 1.5rem;
 }
+
 .home_container .me {
   width: 20rem;
   height: 22rem;
   background: linear-gradient(var(--color-primary), transparent);
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
-  margin:20px auto ;
-  padding: 1.5rem 1rem 1rem ;
-  
+  margin: 2rem auto 0;
+  padding: 1.5rem 1rem 0;
 }
+
 .home_container .me img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
 
+.home_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  bottom: 25px;
+  position: absolute;
+  gap: 0.6rem;
 }
-.home_socials{
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    bottom: 25px;
-    position: absolute;
-    gap: 0.6rem;
-    text-align: center;
 
+.home_socials a {
+  font-size: 25px;
 }
-.home_socials a{
-    font-size: 25px;
-}
+
 .home_socials::after {
-  content: "";
+  content: '';
   width: 1px;
   height: 4rem;
   background: var(--color-primary);
 }
+
 .scroll_down {
   position: absolute;
-  right: 0rem;
+  right: 0;
   bottom: 5rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
   color: var(--color-white);
 }
+
 .scroll_down:hover {
   color: var(--color-primary);
 }
-@media screen and (max-width: 1024px) {
-  .home {
-    height: 68vh;
-  }
-}
+
 @media screen and (max-width: 600px) {
+  .home {
+    padding-bottom: 5rem;
+  }
+
   .home_socials {
     position: static;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .home_socials::after {
@@ -85,5 +89,10 @@ overflow: hidden;
 
   .scroll_down {
     display: none;
+  }
+
+  .home_container .me {
+    width: 16rem;
+    height: 18rem;
   }
 }

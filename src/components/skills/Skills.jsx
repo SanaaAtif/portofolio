@@ -25,7 +25,7 @@ const skills = [
 ]
 function Skills() {
   return (
-    <section className='skills'>
+    <section className='skills' id='skills'>
       <div className='top_section'>
         <h5>What skills I have</h5>
         <h2>My Skills</h2>
